@@ -64,9 +64,9 @@ ROBOTSTXT_OBEY = False   # 不遵从门户网站robots协议，避免某些信�
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'firstBlood.pipelines.FirstbloodPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'firstBlood.pipelines.FirstbloodPipeline': 300,  # 优先级
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

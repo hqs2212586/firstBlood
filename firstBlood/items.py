@@ -9,6 +9,9 @@ import scrapy
 
 
 class FirstbloodItem(scrapy.Item):
-    # define the fields for your item here like:
+    # 必须遵从如下属性声明规则
     # name = scrapy.Field()
-    pass
+
+    # 声明item属性
+    author = scrapy.Field()  # 存储解析到的作者
+    content = scrapy.Field()  # 存储解析到的内容信息
